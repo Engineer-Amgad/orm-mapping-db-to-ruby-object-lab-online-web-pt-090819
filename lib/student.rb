@@ -64,18 +64,17 @@ class Student
     DB[:conn].execute(sql)
   end
   
-  def self.find_
+  def self.all_students_in_grade_9
     # This method should return an array of all the students in grade 9
     
     sql = <<-SQL
       SELECT *
       FROM students
-      WHERE name = ?
-      LIMIT 1 
+      WHERE grade = 9
       SQL
       
-      DB[:conn].execute(sql, name).map do |row|
-        self.new_from_db(row)
-      end.first 
+      DB[:conn].execute(sql, grade) #.map do |row|
+        #self.new_from_db(row)
+      #end.first 
   end
 end
