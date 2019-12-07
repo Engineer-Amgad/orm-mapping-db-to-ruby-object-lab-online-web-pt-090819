@@ -64,8 +64,8 @@ class Student
     DB[:conn].execute(sql)
   end
   
-  def self.find_by_name(name)
-    # find the student in the database given a name
+  def self.find_
+    # This method should return an array of all the students in grade 9
     
     sql = <<-SQL
       SELECT *
