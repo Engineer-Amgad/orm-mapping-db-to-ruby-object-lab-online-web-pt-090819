@@ -91,7 +91,7 @@ class Student
   end
   
   def self.find_by_name(name)
-    # 
+    # This method should return an array of exactly X number of students
     sql = <<-SQL
       SELECT *
       FROM students
