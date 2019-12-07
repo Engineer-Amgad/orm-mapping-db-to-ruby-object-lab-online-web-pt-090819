@@ -100,6 +100,11 @@ class Student
       SQL
       
       DB[:conn].execute(sql, x)
+      
+    
+    sql = "SELECT * FROM students WHERE grade = 10 LIMIT ?"
+    DB[:conn].execute(sql, x)
+
   end
   
 end
