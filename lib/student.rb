@@ -92,14 +92,14 @@ class Student
   
   def self.first_X_students_in_grade_10(x)
     # This method should return an array of exactly X number of students
-    sql = <<-SQL
-      SELECT *
-      FROM students
-      WHERE grade = 10
-      LIMIT ?
-      SQL
+    # sql = <<-SQL
+    #   SELECT *
+    #   FROM students
+    #   WHERE grade = 10
+    #   LIMIT ?
+    #   SQL
       
-      DB[:conn].execute(sql, x)
+    #   DB[:conn].execute(sql, x)
       
     
     sql = "SELECT * FROM students WHERE grade = 10 LIMIT ?"
