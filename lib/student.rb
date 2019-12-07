@@ -105,7 +105,7 @@ class Student
   end
   
   def self.first_X_students_in_grade_10(x)
-    # This method should return an array of exactly X number of students
+    # This should return the first student that is in grade 10
     sql = <<-SQL
       SELECT *
       FROM students
